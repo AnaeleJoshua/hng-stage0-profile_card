@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card | Frontend Wizards Stage 0</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <article data-testid="test-profile-card" class="profile-card">
+      
+      <figure class="avatar-section">
+        <img 
+          src="https://media.licdn.com/dms/image/v2/C4D03AQFve4Oj_5NMbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659825787506?e=1762387200&v=beta&t=uRjf3_mW0vW7TaZZqzLhzA3P3mZZE28lVyfLU7lzoys" 
+          alt="User avatar" 
+          data-testid="test-user-avatar" 
+          class="avatar-img"
+        />
+      </figure>
+
+      <section class="details-section">
+        <header>
+          <h2 data-testid="test-user-name">Anaele Joshua</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          I'm a passionate backend and full-stack developer exploring modern technologies, cloud computing, and software architecture.
+        </p>
+
+        <p>
+          Current time (ms): 
+          <span data-testid="test-user-time" id="current-time"></span>
+        </p>
+
+        <nav aria-label="Social Links" data-testid="test-user-social-links">
+          <ul class="social-links">
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+            <li><a href="https://github.com/AnaeleJoshua" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+            <li><a href="www.linkedin.com/in/joshua-anaele-2a917ab9" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <section aria-label="Hobbies" data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding</li>
+            <li>Music</li>
+            <li>Teaching</li>
+          </ul>
+        </section>
+
+        <section aria-label="Dislikes" data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Procrastination</li>
+            <li>Poor documentation</li>
+            <li>Unoptimized code</li>
+          </ul>
+        </section>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
